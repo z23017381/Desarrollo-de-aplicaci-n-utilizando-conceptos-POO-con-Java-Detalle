@@ -16,7 +16,7 @@ public class Main {
             entrada.nextLine(); 
 
             if (datoEntrada == 1) {
-                AsignarDatos cliente = new AsignarDatos();
+                asignarDatos cliente = new asignarDatos();
 
                 System.out.println("Ingrese sus datos:");
                 System.out.print("Nombre: ");
@@ -41,6 +41,8 @@ public class Main {
                 System.out.println("Hora de salida: " + cliente.getHoraSalida());
                 boleto.mostrarDetalles();
 
+                System.out.println("Reserva Exitosa!");
+
             } else if (datoEntrada == 2) {
                 System.out.println("Cancelando el boleto...");
             } else if (datoEntrada == 3) {
@@ -51,5 +53,7 @@ public class Main {
         } while (datoEntrada != 3);
 
         entrada.close();
+
+        
     }
 }
