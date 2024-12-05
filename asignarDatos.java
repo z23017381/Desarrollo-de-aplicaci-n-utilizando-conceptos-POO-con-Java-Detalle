@@ -1,4 +1,4 @@
-public class AsignarDatos {
+public class asignarDatos {
 
     private String nombreCliente;
     private String lugarSalida;
